@@ -165,7 +165,7 @@
 
 #define RPC_IP_FAILS_BEFORE_BLOCK                       3
 
-#define CRYPTONOTE_NAME                         "bitmonero"
+#define CRYPTONOTE_NAME                         "bitmcoin"
 #define CRYPTONOTE_BLOCKCHAINDATA_FILENAME      "data.mdb"
 #define CRYPTONOTE_BLOCKCHAINDATA_LOCK_FILENAME "lock.mdb"
 #define P2P_NET_DATA_FILENAME                   "p2pstate.bin"
@@ -231,13 +231,13 @@ namespace config
   uint64_t const CRYPTONOTE_PUBLIC_ADDRESS_BASE58_PREFIX = 18;
   uint64_t const CRYPTONOTE_PUBLIC_INTEGRATED_ADDRESS_BASE58_PREFIX = 19;
   uint64_t const CRYPTONOTE_PUBLIC_SUBADDRESS_BASE58_PREFIX = 42;
-  uint16_t const P2P_DEFAULT_PORT = 18080;
-  uint16_t const RPC_DEFAULT_PORT = 18081;
-  uint16_t const ZMQ_RPC_DEFAULT_PORT = 18082;
+  uint16_t const P2P_DEFAULT_PORT = 19090;
+  uint16_t const RPC_DEFAULT_PORT = 19091;
+  uint16_t const ZMQ_RPC_DEFAULT_PORT = 19092;
   boost::uuids::uuid const NETWORK_ID = { {
-      0x12 ,0x30, 0xF1, 0x71 , 0x61, 0x04 , 0x41, 0x61, 0x17, 0x31, 0x00, 0x82, 0x16, 0xA1, 0xA1, 0x10
+      0x11 ,0x20, 0xA6, 0x61 , 0x60, 0xA8 , 0x30, 0x60, 0x16, 0x21, 0x02, 0x62, 0x18, 0xA4, 0xA4, 0x20
     } }; // Bender's nightmare
-  std::string const GENESIS_TX = "013c01ff0001ffffffffffff03029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd08807121017767aafcde9be00dcfd098715ebcf7f410daebc582fda69d24a28e9d0bc890d1";
+  std::string const GENESIS_TX = "013c01ff000180f092cbdd080295a322d4841100fb4755afe879c71dbfe8fa1f96b63d22fe17acb68b40b65a9521018029436966783a7aec5e283879b985e454db3397d274e2e77830dd3722188ab3";
   uint32_t const GENESIS_NONCE = 10000;
 
   // Hash domain separators
@@ -274,13 +274,13 @@ namespace config
     uint64_t const CRYPTONOTE_PUBLIC_ADDRESS_BASE58_PREFIX = 53;
     uint64_t const CRYPTONOTE_PUBLIC_INTEGRATED_ADDRESS_BASE58_PREFIX = 54;
     uint64_t const CRYPTONOTE_PUBLIC_SUBADDRESS_BASE58_PREFIX = 63;
-    uint16_t const P2P_DEFAULT_PORT = 28080;
-    uint16_t const RPC_DEFAULT_PORT = 28081;
-    uint16_t const ZMQ_RPC_DEFAULT_PORT = 28082;
+    uint16_t const P2P_DEFAULT_PORT = 29090;
+    uint16_t const RPC_DEFAULT_PORT = 29091;
+    uint16_t const ZMQ_RPC_DEFAULT_PORT = 29092;
     boost::uuids::uuid const NETWORK_ID = { {
-        0x12 ,0x30, 0xF1, 0x71 , 0x61, 0x04 , 0x41, 0x61, 0x17, 0x31, 0x00, 0x82, 0x16, 0xA1, 0xA1, 0x11
+        0x11 ,0x20, 0xA6, 0x61 , 0x60, 0xA8 , 0x30, 0x60, 0x16, 0x21, 0x02, 0x62, 0x18, 0xA4, 0xA4, 0x21
       } }; // Bender's daydream
-    std::string const GENESIS_TX = "013c01ff0001ffffffffffff03029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd08807121017767aafcde9be00dcfd098715ebcf7f410daebc582fda69d24a28e9d0bc890d1";
+    std::string const GENESIS_TX = "013c01ff000180f092cbdd0802d7d3ff1af068c62f21700ebaff0d82ce0a3024e6e4983ff591f24531e155392721015dc384ee7de11c4bf5fe9ffbaac225ee36ddbf174d71c2ba720e19637438699e";
     uint32_t const GENESIS_NONCE = 10001;
   }
 
@@ -289,13 +289,13 @@ namespace config
     uint64_t const CRYPTONOTE_PUBLIC_ADDRESS_BASE58_PREFIX = 24;
     uint64_t const CRYPTONOTE_PUBLIC_INTEGRATED_ADDRESS_BASE58_PREFIX = 25;
     uint64_t const CRYPTONOTE_PUBLIC_SUBADDRESS_BASE58_PREFIX = 36;
-    uint16_t const P2P_DEFAULT_PORT = 38080;
-    uint16_t const RPC_DEFAULT_PORT = 38081;
-    uint16_t const ZMQ_RPC_DEFAULT_PORT = 38082;
+    uint16_t const P2P_DEFAULT_PORT = 39090;
+    uint16_t const RPC_DEFAULT_PORT = 39091;
+    uint16_t const ZMQ_RPC_DEFAULT_PORT = 39092;
     boost::uuids::uuid const NETWORK_ID = { {
-        0x12 ,0x30, 0xF1, 0x71 , 0x61, 0x04 , 0x41, 0x61, 0x17, 0x31, 0x00, 0x82, 0x16, 0xA1, 0xA1, 0x12
+        0x11 ,0x20, 0xA6, 0x61 , 0x60, 0xA8 , 0x30, 0x60, 0x16, 0x21, 0x02, 0x62, 0x18, 0xA4, 0xA4, 0x22
       } }; // Bender's daydream
-    std::string const GENESIS_TX = "013c01ff0001ffffffffffff0302df5d56da0c7d643ddd1ce61901c7bdc5fb1738bfe39fbe69c28a3a7032729c0f2101168d0c4ca86fb55a4cf6a36d31431be1c53a3bd7411bb24e8832410289fa6f3b";
+    std::string const GENESIS_TX = "013c01ff000180f092cbdd0802ecbd4d707fc24807bd2114771febda14b6bae91e3138c10c3f0cede4582e01262101129940b6ff218a855dd47c5b15f17d385f11cdb108181a1c02354b4ff3986cb2";
     uint32_t const GENESIS_NONCE = 10002;
   }
 }
