@@ -99,8 +99,8 @@ namespace boost {
 
 using namespace std;
 
-const char * const BITCOIN_CONF_FILENAME = "bitcoin.conf";
-const char * const BITCOIN_PID_FILENAME = "bitcoind.pid";
+const char * const BITCOIN_CONF_FILENAME = "bitmcoin.conf";
+const char * const BITCOIN_PID_FILENAME = "bitmcoind.pid";
 
 map<string, string> mapArgs;
 map<string, vector<string> > mapMultiArgs;
@@ -435,7 +435,7 @@ static std::string FormatException(const std::exception* pex, const char* pszThr
     char pszModule[MAX_PATH] = "";
     GetModuleFileNameA(NULL, pszModule, sizeof(pszModule));
 #else
-    const char* pszModule = "bitcoin";
+    const char* pszModule = "bitmcoin";
 #endif
     if (pex)
         return strprintf(
@@ -476,7 +476,7 @@ boost::filesystem::path GetDefaultDataDir()
     return pathRet / "Bitmcoin";
 #else
     // Unix
-    return pathRet / ".bitcoin";
+    return pathRet / ".bitmcoin";
 #endif
 #endif
 }
